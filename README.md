@@ -14,91 +14,91 @@
 ----  
 # 目录
 - [写在前面](#写在前面)
-- [基本模块](#basic)
-  - [项目管理](#projectManagement)
-  - [全局权限](#globalPermission)
-  - [全局角色](#globalRoles)
-  - [用户管理](#usersManagement)
-- [问题类型](#issueType)
-  - [项目使用问题类型](issuneTypeConnect)
-- [工作流](#workFlow)
-  - [自定义工作流状态](#workFlowStatus)
-  - [自定义工作流](#customWorkFlow)
-  - [项目使用工作流](#workFlowConnect)
-- [操作界面](#operationInterface)
-  - [自定义字段](#customField)
-  - [自定义界面](#customInterface)
-  - [关联项目](#operationInterfaceConnect)
-  - [工作流子界面使用](#childInterface)
-- [字段配置](#fieldConfiguration)
-  - [维护配置](#fieldConfigurationSetting)
-  - [关联项目](#fieldConfigurationConnect)
-- [权限](#customPermission)
-  - [自定义权限方案](#permissionPlan)
-  - [项目使用权限方案](#permissionPlanConnect)
-  - [关于工作流中权限限制](#workFlowPermission)
-- [邮件提醒](#email)
-  - [配置邮件](#emailSetting)
-  - [配置通知方案](#notificationPlan)
-  - [项目使用通知方案](#notificationPlanConnect)
-  - [工作流中动作使用自定义通知](#workFlowNotification)
-- [其他设置](#othersSetting)
-  - [附件](#attachment)
-  - [经办人](#agent)
-  - [系统面板](#dashbord)
-  - [过滤器](#filter)
-  - [邮件定时发送](#emailTiming)
-  - [列表字段调整](#filedSetting)
-  - [邮件模板注意事项](#emailTemplate)
-  - [批量操作](#batchOperation)
+- [基本模块](#基本模块)
+  - [项目管理](#项目管理)
+  - [全局权限](#全局权限)
+  - [全局角色](#全局角色)
+  - [用户管理](#用户管理)
+- [问题类型](#问题类型)
+  - [项目使用问题类型](项目使用问题类型)
+- [工作流](#工作流)
+  - [自定义工作流状态](#自定义工作流状态)
+  - [自定义工作流](#自定义工作流)
+  - [项目使用工作流](#项目使用工作流)
+- [操作界面](#操作界面)
+  - [自定义字段](#自定义字段)
+  - [自定义界面](#自定义界面)
+  - [关联项目](#关联项目)
+  - [工作流子界面使用](#工作流子界面使用)
+- [字段配置](#字段配置)
+  - [维护配置](#维护配置)
+  - [关联项目](#关联项目)
+- [权限](#权限)
+  - [自定义权限方案](#自定义权限方案)
+  - [项目使用权限方案](#项目使用权限方案)
+  - [关于工作流中权限限制](#关于工作流中权限限制)
+- [邮件提醒](#邮件提醒)
+  - [配置邮件](#配置邮件)
+  - [配置通知方案](#配置通知方案)
+  - [项目使用通知方案](#项目使用通知方案)
+  - [工作流中动作使用自定义通知](#工作流中动作使用自定义通知)
+- [其他设置](#其他设置)
+  - [附件](#附件)
+  - [经办人](#经办人)
+  - [系统面板](#系统面板)
+  - [过滤器](#过滤器)
+  - [邮件定时发送](#邮件定时发送)
+  - [列表字段调整](#列表字段调整)
+  - [邮件模板注意事项](#邮件模板注意事项)
+  - [批量操作](#批量操作)
   
   
 ***
-## 写在前面
+##  写在前面  
 此文档基于自定义一个事件流程对JIRA中基本功能进行介绍  
 旨在让阅读人员大体了解JIRA是如何配置并投入使用
 ***
-## <span id="basic">基本模块</span>  
-### <span id="projectManagement">项目管理</span>  
-### <span id="globalPermission">全局权限</span>  
-### <span id="globalRoles">全局角色</span>  
-### <span id="usersManagement">用户管理</span>  
+##  基本模块  
+###  项目管理  
+###  全局权限  
+###  全局角色  
+###  用户管理  
 ***
-## <span id="issueType">问题类型</span>  
-### <span id="issuneTypeConnect">项目使用问题类型</span>  
-## <span id="workFlow">工作流</span>  
-### <span id="workFlowStatus">自定义工作流</span>  
-### <span id="customWorkFlow">自定义工作流状态</span>  
-### <span id="workFlowConnect">项目使用工作流</span>  
+##  问题类型  
+###  项目使用问题类型  
+##  工作流  
+###  自定义工作流  
+###  自定义工作流状态  
+###  项目使用工作流  
 ***
-## <span id="operationInterface">操作界面</span>  
-### <span id="customField">自定义字段</span>  
-### <span id="customInterface">自定义界面</span>  
-### <span id="operationInterfaceConnect">项目使用界面</span>  
-### <span id="childInterface">工作流子界面使用</span>  
+##  操作界面  
+###  自定义字段  
+###  自定义界面  
+###  项目使用界面  
+###  工作流子界面使用  
 ***
-## <span id="fieldConfiguration">字段配置</span>  
-### <span id="fieldConfigurationSetting">维护配置</span>  
-### <span id="fieldConfigurationConnect">关联项目</span>  
+##  字段配置  
+###  维护配置  
+###  关联项目  
 ***
-## <span id="customPermission">权限</span>  
-### <span id="permissionPlan">自定义权限方案</span>  
-### <span id="permissionPlanConnect">项目使用权限方案</span>  
-### <span id="workFlowPermission">工作流中权限控制</span>  
+##  权限  
+###  自定义权限方案  
+###  项目使用权限方案  
+###  工作流中权限控制  
 ***
-## <span id="email">邮件提醒</span>  
-### <span id="emailSetting">配置邮件</span>  
-### <span id="notificationPlan">配置通知方案</span>  
-### <span id="notificationPlanConnect">项目使用通知方案</span>  
-### <span id="workFlowNotification">工作流中动作使用自定义通知</span>  
+##  邮件提醒  
+###  配置邮件  
+###  配置通知方案  
+###  项目使用通知方案  
+###  工作流中动作使用自定义通知  
 ***
-## <span id="othersSetting">其他设置</span>  
-### <span id="attachment">附件</span>  
-### <span id="agent">经办人</span>  
-### <span id="dashbord">系统面板</span>  
-### <span id="filter">过滤器</span>  
-### <span id="emailTiming">邮件定时发送</span>  
-### <span id="filedSetting">列表字段调整</span>  
-### <span id="emailTemplate">邮件模板注意事项</span>
-### <span id="batchOperation">批量操作</span>
+##  其他设置  
+###  附件  
+###  经办人  
+###  系统面板  
+###  过滤器  
+###  邮件定时发送  
+###  列表字段调整  
+###  邮件模板注意事项
+###  批量操作
   
